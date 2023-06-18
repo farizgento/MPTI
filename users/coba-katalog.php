@@ -10,7 +10,7 @@ include('../components/partials/header.php')
 <div class="container-fluid">
     <div class="row flex-nowrap">
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 shadow">
-            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-100">
+            <div class="d-flex flex-column align-items-center align-items-sm-start pt-2 px-2 min-vh-100">
                 <h1 class="d-flex align-items-center py-lg-5 py-sm-3 mb-md-0 me-md-auto">
                     <span class="fs-5 d-none d-sm-inline fw-bold">KATEGORI</span>
                 </h1>
@@ -26,7 +26,7 @@ include('../components/partials/header.php')
             </div>
         </div>
         <!-- CONTENT -->
-        <div class="col py-3">
+        <div class="col col-md-9 col-xl-10 px-0 py-3">
             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -75,16 +75,57 @@ include('../components/partials/header.php')
             <!-- KATALOG -->
             <div class="container">
                 <h1 class="text-center">Katalog Produk</h1>
-                <div class="row" id="product-list">
-                <!-- Daftar Produk akan di-generate oleh JavaScript -->
-                    <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-5  row-cols-sm-2 gx-4" id="product-list">
+                    <?php
+                    // Array of products
+                    $products = [
+                        [
+                            'image' => 'path/to/product1.jpg',
+                            'title' => 'Laptop 1',
+                            'description' => 'Description of Laptop 1',
+                            'button_text' => 'Buy Now'
+                        ],
+                        [
+                            'image' => 'path/to/product2.jpg',
+                            'title' => 'Laptop 2',
+                            'description' => 'Description of Laptop 2',
+                            'button_text' => 'Buy Now'
+                        ],
+                        [
+                            'image' => 'path/to/product3.jpg',
+                            'title' => 'Laptop 3',
+                            'description' => 'Description of Laptop 3',
+                            'button_text' => 'Buy Now'
+                        ],
+                        [
+                            'image' => 'path/to/product3.jpg',
+                            'title' => 'Laptop 3',
+                            'description' => 'Description of Laptop 3',
+                            'button_text' => 'Buy Now'
+                        ],
+                        [
+                            'image' => 'path/to/product3.jpg',
+                            'title' => 'Laptop 3',
+                            'description' => 'Description of Laptop 3',
+                            'button_text' => 'Buy Now'
+                        ],
+                        // Add more products here
+                    ];
+
+                    // Loop through products
+                    foreach ($products as $product) {
+                        echo '<div class="col mb-4">';
+                        echo '<div class="card product-card" style="width: 18rem;">';
+                        echo '<img src="' . $product['image'] . '" class="card-img-top" alt="...">';
+                        echo '<div class="card-body">';
+                        echo '<h5 class="card-title">' . $product['title'] . '</h5>';
+                        echo '<p class="card-text">' . $product['description'] . '</p>';
+                        echo '<a href="#" class="btn btn-primary">' . $product['button_text'] . '</a>';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '</div>';
+                    }
+                    ?>
                 </div>
             </div>  
         </div>

@@ -23,7 +23,7 @@
         <!-- CONTENT -->
         <div class="col-auto col-md-9 col-xl-10 px-sm-10 py-3">
             <div class="d-flex px-4 my-5">
-                <h4 class="w-100 fw-bold d-none d-lg-block ">Service</h4>
+                <h4 class="w-100 fw-bold d-none d-lg-block ">KATALOG</h4>
                 <div class="dropdown w-100 d-lg-none">
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Kategori

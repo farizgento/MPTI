@@ -38,7 +38,6 @@ include('../components/partials/header.php')
         </div>
     </div>
  </div>
-
 </div>
 
 

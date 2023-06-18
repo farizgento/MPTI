@@ -61,6 +61,47 @@ header {
   border-radius: [object Object]px;
 
 }
+.list-none{
+ list-style: none;
+}
+
+.table-heading {
+  background-color: #FFB703;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.table-rounded {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination .page-item {
+  margin: 0 5px;
+}
+
+.pagination .page-item:first-child,
+.pagination .page-item:last-child {
+  margin: 0;
+}
+
+
+.product-card {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+  .product-card {
+      margin-right: 10px;
+      margin-left: 10px;
+  }
+}
+
 /*untuk layar device berukuran kecil*/
 @media screen and (max-width: 450px) {
   .logo {

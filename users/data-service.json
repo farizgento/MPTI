@@ -1,0 +1,23 @@
+{
+    "serviceStatus": [
+      {
+        "track_number": "ABC123",
+        "nama": "John Doe",
+        "perangkat": "Smartphone",
+        "status": "Sedang dalam proses perbaikan"
+      },
+      {
+        "track_number": "DEF456",
+        "nama": "Jane Smith",
+        "perangkat": "Laptop",
+        "status": "Selesai diperbaiki"
+      },
+      {
+        "track_number": "GHI789",
+        "nama": "Michael Johnson",
+        "perangkat": "Tablet",
+        "status": "Belum diterima di pusat servis"
+      }
+    ]
+  }
+  

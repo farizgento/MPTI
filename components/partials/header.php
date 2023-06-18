@@ -1,5 +1,5 @@
-<header style="background-color:#FFFFFF" class="shadow-sm">
-  <nav class="navbar navbar-expand-md navbar-light container">
+<header style="background-color:#FFFFFF; width:100%;"  class="shadow-sm">
+  <nav class="navbar navbar-expand-md navbar-light container" style="width: 100%;">
     <div class="container">
       <a class="navbar-brand ms-2" style="color:#000000" href="#">
         <img src="../components/image/JayaDigital.png" class="py-2" alt="Jaya Digital" width="158" height="78">
